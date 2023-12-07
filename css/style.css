@@ -91,6 +91,30 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >span {
+        font-family: Rajdhani;
+        color: var(--primary-color);
+    }
+
+    .btn {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 400;
+
+        >i {
+            font-weight: 800;
+        }
+    }
 }
 
 .small__title {
@@ -100,9 +124,28 @@ body {
     font-size: 48px;
     font-weight: 600;
 
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     >span {
         font-family: Rajdhani;
         color: var(--primary-color);
+    }
+
+    .btn {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 400;
+
+        >i {
+            font-weight: 800;
+        }
     }
 }
 
@@ -211,7 +254,7 @@ body {
         flex-direction: row;
         align-items: center;
 
-        >input{
+        >input {
             width: fit-content;
         }
     }
