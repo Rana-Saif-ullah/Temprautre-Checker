@@ -47,7 +47,7 @@ body {
 /* ====== Selection ====== */
 
 
-::selection{
+::selection {
     background-color: var(--primary-color);
     color: #FFF;
 }
@@ -99,10 +99,28 @@ body {
     font-family: Rajdhani;
     font-size: 48px;
     font-weight: 600;
-    
-    >span{
+
+    >span {
         font-family: Rajdhani;
         color: var(--primary-color);
+    }
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+
+    >i {
+        cursor: pointer;
+        color: var(--primary-color);
+        font-size: 32px;
+        transition: .3s;
+    }
+
+    >i:hover {
+        color: #FFF;
     }
 }
 
@@ -114,6 +132,7 @@ body {
     padding: 9px 20px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     /* Style */
 
@@ -125,4 +144,84 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.delete__icon {
+    right: 14px;
+    top: 34px;
+    font-size: 24px;
+    color: var(--primary-color);
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/* Popup */
+
+.edit__popup {
+    position: fixed;
+    padding: 20px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    z-index: 2;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0 4px 10px rgba(133, 160, 251, 0.20);
+
+    .small__title {
+        text-align: center;
+    }
+
+    .input__field {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+
+        min-width: 450px;
+
+        .input__text {
+            color: var(--dark-color);
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        >input {
+            color: var(--primary-color);
+
+            padding: 10px;
+
+            width: 100%;
+
+            border: 2px solid var(--primary-color);
+            outline: none;
+            border-radius: 10px;
+        }
+    }
+
+    .checkbox__field {
+        flex-direction: row;
+        align-items: center;
+
+        >input{
+            width: fit-content;
+        }
+    }
+
+    .full__area {
+        grid-column: 1;
+        grid-column-end: 3;
+    }
+
+    .btn {
+        padding: 6px;
+    }
 }
