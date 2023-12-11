@@ -27,7 +27,7 @@
 html,
 body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     background: radial-gradient(259.37% 141.42% at 100% 0%, #FFF 0%, #FFF 52.84%, #282E43 95.78%);
 }
 
